@@ -1,0 +1,172 @@
+ ASSIGNMENT – 2
+Q1. Write python code to repeat the following string 9 times using string operator ‘*’. i.)Python 
+ii.)Mathematics
+>>> A="Python"
+>>> B="Mathematics"
+>>> print(A*9)
+PythonPythonPythonPythonPythonPythonPythonPythonPython
+>>> print(B*9)
+MathematicsMathematicsMathematicsMathematicsMathematicsMathematicsMathematicsMathematicsMath
+ematics
+Q2. Use python code to construct string operation ‘+’ below string. i.)string1=Hello,string2=World! ii.) 
+string1=Good,string2=Morning.
+>>> string1="Hello"
+>>> string2="World!"
+>>> print(string1+string2)
+HelloWorld!
+>>> string1="Good"
+>>> string2="Morning"
+>>> print(string1+string2)
+GoodMorning
+Q3. Repeat the following string 11 times using the string operator ’*’ on python. i.)LATEX ii.)MATLAB
+>>> A="LATEX"
+>>> B="MATLAB"
+>>> print(A*11)
+LATEXLATEXLATEXLATEXLATEXLATEXLATEXLATEXLATEXLATEXLATEX
+>>> print(B*11)
+MATLABMATLABMATLABMATLABMATLABMATLABMATLABMATLABMATLABMATLABMATLAB
+Q4. Write python program which deals with concatenation and repetition of lists. LIST1=[15,20,25,30,35,40] 
+LIST2=[7,14,21,28,35,42] i.)Find List1+List2 ii.)Find 9*List1 iii.)Find 7*List2
+>>> List1=[15,20,25,30,35,40]
+>>> List2=[7,14,21,28,35,42]
+>>> List1+List2
+[15, 20, 25, 30, 35, 40, 7, 14, 21, 28, 35, 42]
+>>> 9*List1
+[15, 20, 25, 30, 35, 40, 15, 20, 25, 30, 35, 40, 15, 20, 25, 30, 35, 40, 15, 20, 25, 30, 35, 40, 15, 20, 25, 30, 35, 40, 
+15, 20, 25, 30, 35, 40, 15, 20, 25, 30, 35, 40, 15, 20, 25, 30, 35, 40, 15, 20, 25, 30, 35, 40]
+>>> 7*List2
+[7, 14, 21, 28, 35, 42, 7, 14, 21, 28, 35, 42, 7, 14, 21, 28, 35, 42, 7, 14, 21, 28, 35, 42, 7, 14, 21, 28, 35, 42, 7, 14, 
+21, 28, 35, 42, 7, 14, 21, 28, 35, 42]
+Q5. Using python code sort the tuple in ascending and decending order 5,-3,0,1,6,-6,2.
+>>> tuple1=(5,-3,0,1,6,-6,2)
+>>> tuple(sorted(list(tuple1)))
+(-6, -3, 0, 1, 2, 5, 6)
+>>> tuple(sorted(tuple1,reverse=True))
+(6, 5, 2, 1, 0, -3, -6)
+Q6. Write python code to sort tuple in ascending order(49,17,23,54,36,72)
+>>> tuple1=(49,17,23,54,36,72)
+>>> tuple(sorted(list(tuple1)))
+(17, 23, 36, 49, 54, 72)
+Q7. Evaluate following expression on python. i.)M=[1,2,3,4].Find length M ii.)L=”XYZ”+”pqr”,Find L. 
+iii.)s=’Make In India’,Find (s[:7]&s[:9]).
+>>> M=[1,2,3,4]
+>>> print(len(M))
+4
+>>> L1="XYZ"
+>>> L2="pqr"
+>>> L=L1+L2
+>>> print(L)
+XYZpqr
+>>> s='Make In India'
+>>> s[:7]
+'Make In'
+>>> s[:9]
+'Make In I'
+Q8. Write python code to list name and roll number of 5 students in B.Sc.(computer science).
+>>> 
+S=[{"name":"Raj","roll_no":1},{"name":"shaam","roll_no":2},{"name":"Rohit","roll_no":3},{"name":"karan","ro
+ll_no":4},{"name":"tejas","roll_no":5}]
+>>> for student in S:
+... print(f"Name:{student['name']},roll number:{student['roll_no']}")
+...
+Name : Raj, roll number : 1
+Name : Shaam, roll number : 2
+Name : Rohit, roll number : 3
+Name : Karan, roll number : 4
+Name : Tejas, roll number : 5
+Q9. Repeate the following string 7 times using the string operator ’*’ on python. i.)Complex number ii.)Real 
+number.
+>>> A="Complex number"
+>>> B="Real number"
+>>> print(A)
+Complex number
+>>> print(B)
+Real number
+Q10. The following two statements using the ‘+’string operation on python. i.)string1=India Won, 
+string2=World Cup ii.)string1=God, string2=is Great
+>>> String1="India Won"
+>>> String2="World Cup"
+>>> print(String1+String2)
+India WonWorld Cup
+>>> String1="God"
+>>> String2="is Great"
+>>> print(String1+String2)
+>>> String1="God"
+>>> String2=" is Great"
+>>> print(String1+String2)
+God is Great
+Q11. Use python code to generate second,fifth,eight characters from string ‘MATHEMATICS’.
+>>> s="MATHEMATICS"
+>>> print(s[:2])
+MA
+>>> print(s[:5])
+MATHE
+>>> print(s[:8])
+MATHEMAT
+Q12. Use python code to find minimum value from the given numbers 16,3,5,48,2,4,5,6,78,12,5,6,24.
+>>> A=( 16,3,5,48,2,4,5,6,78,12,5,6,24)
+>>> min(A)
+2
+Q13. Write a python program using tuple that swap the values of two variables.
+>>> def swap(x,y):
+... x,y=y,x
+... return x,y
+...
+>>> x=4
+>>> y=5
+>>> swap(x,y)
+(5, 4)
+Q14. write python code to reverse the strings S=[1,2,3,4,5,6,7,8,9].
+>>> tuple1=[1,2,3,4,5,6,7,8,9]
+>>> tuple=(sorted(tuple1, reverse=True))
+>>> print(tuple)
+[9, 8, 7, 6, 5, 4, 3, 2, 1]
+Q15. Write python code to display tuple ‘I am Indian’ and the second letter in this tuple.
+>>> t1=['I', ' ', 'a' , 'm', ' ' , ' I' , 'n' , 'd' , 'i' , 'a' , 'n']
+>>> print("tuple:",''.join(t1))
+tuple: I am Indian
+>>> second_letter=t1[1]
+>>> print("second letter:",second_letter)
+second letter:
+Q16. Write python code to find the tuple ‘MATHEMATICS’ from range 3 to 9.
+>>> tuple=("MATHEMATICS")
+>>> print(tuple)
+MATHEMATICS
+>>> tuple[3:9]
+'HEMATI'
+Q17. Write python code to list name and birth date of 5 students in your class.
+>>>
+S=[{"name":"Raj","birth_date":1/9/2004},{"name":"shaam","birth_date":2/8/2003},{"name":"Rohit","birth_da
+te":3/7/2004},{"name":"karan","birth_date":4/6/2004},{"name":"tejas","birth_date":5/4/2003}]
+>>> for student in S:
+... print(f"Name:{student['name']},birth date:{student['birth_date']}")
+...
+Name : Raj , birth date:5.5444666223109334e-05
+Name : shaam , birth date:0.00012481278082875687
+Name : Rohit , birth date:0.000213857998289136
+Name : karan , birth date:0.00033266799733865603
+Name : tejas , birth date:0.0006240639041437844
+Q18. Write python to generate modulus value of -10,10,-1,1,0.
+>>> numbers=[-10,10,-1,1,0]
+>>> modulus_values=[abs(number)for number in numbers]
+>>> for i in range(len(numbers)):
+... print(f"Modulus of{numbers[i]}:{modulus_values[i]}")
+...
+Modulus of-10:10
+Modulus of10:10
+Modulus of-1:1
+Modulus of1:1
+Modulus of0:0
+Q19. Using python code to list Name of 5 teacher in your college with their subject.
+>>> 
+S=[{"teacher_name":"Raj","subject":"HISTORY"},{"teacher_name":"shaam","subject":"COMPUTER"},{"teacher
+_name":"Rohit","subject":"SCIENCE"},{"teacher_name":"karan","subject":"MARATHI"},{"teacher_name":"Teja
+s","subject":"MATHS"}]
+>>> for teacher in S:
+... print(f"Teacher Name:{teacher['teacher_name']},subject:{teacher['subject']}")
+...
+Teacher Name : Raj ,s ubject : HISTORY
+Teacher Name : shaam , subject : COMPUTER
+Teacher Name : Rohit , subject : SCIENCE
+Teacher Name : karan , subject : MARATHI
+Teacher Name : Tejas , subject : MATHS
